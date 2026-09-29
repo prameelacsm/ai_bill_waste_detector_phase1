@@ -1,0 +1,50 @@
+# ---- Secrets / Environment ----
+.env
+*.env
+
+# ---- Python ----
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Database ----
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# ---- Uploaded / user data (may contain sensitive financial info) ----
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+uploads/
+temp_uploads/
+*.tmp
+
+# ---- OCR temp files ----
+*.ocr_tmp
+tessdata_temp/
+
+# ---- Trained ML model artifacts (can be large / regenerable) ----
+ml/models/*
+!ml/models/.gitkeep
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
+logs/
